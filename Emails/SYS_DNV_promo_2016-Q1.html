@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Denovo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+    /* iOS LINKS */
+    .appleBody a {color:#19988b; text-decoration: underline;}
+    .appleFooter a {color:#888888;}
+    .eloquaFooter a {color:#888888;}
+
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 625px) {
+
+        /* ALLOWS FOR FLUID TABLES */
+        table[class="wrapper"]{
+          width:100% !important;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        td[class="logo"]{
+          text-align: left;
+          padding: 10px 0 10px 0 !important;
+        }
+
+        td[class="logo"] img{
+          margin:0 auto!important;
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        td[class="mobile-hide"]{
+          display:none;}
+
+        img[class="mobile-hide"]{
+          display: none !important;
+        }
+
+         img[class="img-max"]{
+          width: 100% !important;
+          height:auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        table[class="responsive-table"]{
+          width:100%!important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        td[class="padding"]{
+          padding: 10px 5% 15px 5% !important;
+        }
+
+        td[class="padding-copy"]{
+          padding: 10px 5% 10px 5% !important;
+          text-align: center;
+        }
+
+        td ul, td li [class="padding-copy"]{
+          padding: 10px 5% 10px 5% !important;
+          text-align: left;
+        }
+
+
+        td[class="padding-meta"]{
+          padding: 30px 5% 0px 5% !important;
+          text-align: center;
+        }
+
+        td[class="no-pad"]{
+          padding: 0 0 20px 0 !important;
+        }
+
+        td[class="no-padding"]{
+          padding: 0 !important;
+        }
+
+        td[class="section-padding"]{
+          padding: 0px 15px 0px 15px !important;
+        }
+
+        td[class="section-padding-bottom-image"]{
+          padding: 50px 15px 0 15px !important;
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        td[class="mobile-wrapper"]{
+            padding: 10px 5% 15px 5% !important;
+        }
+
+        table[class="mobile-button-container"]{
+            margin:0 auto;
+            width:100% !important;
+        }
+
+        a[class="mobile-button"]{
+            width:80% !important;
+            padding: 15px !important;
+            border: 0 !important;
+            font-size: 14px !important;
+        }
+
+    }
+</style>
+</head>
+<body style="margin: 0; padding: 0;">
+
+<!-- PREHEADER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 1px solid #dddddd;">
+  <tr>
+    <td bgcolor="#ffffff">
+      <div style="display: none; font-size: 1px; color: #ffffff; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+         <!--Insert preheader text here-->
+      </div>
+      <div align="center" style="padding: 0px 15px 0px 15px;">
+        <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+          <!-- LOGO/PREHEADER TEXT -->
+          <tr>
+            <td style="padding: 15px 10px 15px 10px;">
+              <table border="0" cellpadding="0" cellspacing="0"  width="100%">
+                <tr>
+                  <td bgcolor="#ffffff" width="150" align="left">
+                    <a href="http://www.denovo-us.com" target="_blank">
+                      <img alt="Denovo Logo" src="http://images.response.denovo-us.com/EloquaImages/clients/Denovo/%7be37033fa-6e25-47ae-a3e3-235ebbaa5563%7d_DNV_LOGO_fullColor_800x168.png" width="100" height="21" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #f8f8f8; font-size: 14px;" border="0">
+                    </a>
+                  </td>
+                  <td bgcolor="#ffffff" width="300" align="right">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="right" style="padding: 3px 0; font-size: 14px; font-family: Arial, sans-serif; color: #6e7376; text-decoration: none;">
+                          <a href="https://solutions.oracle.com/scwar/scr/AboutPartners/index.html" target="_blank">
+                            <img alt="Oracle Platinum Partner" src="http://images.response.denovo-us.com/EloquaImages/clients/Denovo/%7b81594ecf-dc2c-43be-84bb-bd804a022690%7d_DNV_LOGO_oraclePlatinumPartnerBlack_612x89.png" width="150" height="22" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #f8f8f8; font-size: 14px;" border="0">
+                          </a>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </td>
+  </tr>
+</table>
+
+
+
+<!-- START HERO -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#f8f8f8" align="center" style="padding: 30px 15px 30px 15px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f8f8f8">
+                            <tr>
+                                <td align="center">
+                                  <img src="http://placehold.it/1200x500" width="600" height="250" border="0" alt="" style="display: block; color: #ffffff;  font-family: Helvetica, arial, sans-serif; font-size: 14px; max-width: 600px; width: 100%;" class="img-max">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END HERO -->
+
+<!-- START EVENT DATE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#f8f8f8" align="center" style="padding: 0px 15px 5px 15px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f8f8f8">
+                            <tr>
+                              <td align="center" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #47494a; letter-spacing: 1px; font-weight: normal;">
+                                DAY, MONTH XX, 2016 | 11:00a - 12:00p MT
+                              </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END EVENT DATE -->
+
+<!-- START TITLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#f8f8f8" align="center" style="padding: 5px 15px 5px 15px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f8f8f8">
+                            <tr>
+                                <td align="center" style="font-size: 24px; line-height: 36px; font-family: Helvetica, Arial, sans-serif; color: #47494a; font-weight: normal;">
+                                  So Long and Thanks For All The Fish Webinar
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END TITLE -->
+
+<!-- START CONTENT-->
+<table bgcolor="#f8f8f8" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" style="padding: 0px 15px 0px 15px;" class="section-padding">
+            <table bgcolor="#f8f8f8"  border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                             <tr>
+                                <td>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <!-- START COPY-->
+                                      <tr>
+                                        <td align="left" style="padding: 15px 0px 0px 0px; font-size: 14px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #6e7376;" class="padding-copy"><span class="appleBody">
+                                            They long ago knew of Earth's planned destruction and tried to communicate this to humans who misinterpreted it as "amusing attempts to punch football or whistle for tidbits." The last ever dolphin message was misinterpreted as a surprisingly sophisticated attempt to do a double-backward somersault through a hoop while whistling the "Star Spangled Banner," but was, in fact, a message. The message was "so long, and thanks for all the fish". <br><br>
+
+                                            <b style="color: #47494a">A towel has immense psychological value:</b><br>
+
+                                            <ul style="font-family: Helvetica, Arial, sans-serif; line-height: 24px; color: #6e7376; padding-left:30px;">
+
+                                              <li style="line-height: 24px; color: #6e7376; padding-top: 0px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;">
+                                                Use it to sail a mini raft down the slow heavy river Moth
+                                              </li>
+
+                                              <li style="line-height: 24px; color: #6e7376; padding-top: 0px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;">
+                                                Wave your towel in emergencies as a distress signal
+                                              </li>
+
+                                              <li style="line-height: 24px; color: #6e7376; padding-top: 0px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;">
+                                                Sleep under it beneath the stars which shine so redly on the desert world of Kakrafoon
+                                              </li>
+
+                                            </ul>
+
+                                            <a href="#?PR=email01" style="color: #19988b;">Register</a> for the So Long And Thanks For All the Fish webinar today. <br><br>
+                                          </span>
+                                        </td>
+                                      </tr>
+
+                                        <!-- START TWO COLUMNS (COPY: LEFT, IMAGE: RIGHT) -->
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" style="padding: 0;" class="mobile-wrapper">
+
+                                                            <!-- START LEFT COLUMN (Half: 47|47, Thirds: 34|60, Small: 22|72) --><!--
+                                                            <table cellpadding="0" cellspacing="0" border="0" width="47%" align="LEFT" class="responsive-table">
+                                                                <tr>
+                                                                    <td style="padding: 10px 0 20px 0;">
+                                                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+                                                                            <tr>
+                                                                                <td align="left" class="no-padding" style="padding: 5px 5px 5px 30px; font-family: Arial, sans-serif; color: #6e7376; font-size: 14px; line-height: 24px;" bgcolor="#f8f8f8"><span class="appleBody">
+                                                                                  I am two columns on the left
+                                                                                </span></td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>-->
+                                                            <!-- END LEFT COLUMN -->
+
+                                                            <!-- START RIGHT COLUMN (Half: 47|47, Thirds: 34|60, Small: 22|72)--><!--
+                                                            <table cellpadding="0" cellspacing="0" border="0" width="47%" align="RIGHT" class="responsive-table">
+                                                                <tr>
+                                                                    <td style="padding: 10px 0 20px 0;">
+                                                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                                            <tr>
+                                                                              <td align="left" class="no-padding" style="padding: 5px 30px 5px 5px; font-family: Arial, sans-serif; color: #6e7376; font-size: 14px; line-height: 24px;" bgcolor="#f8f8f8"><span class="appleBody">
+                                                                                I am two columns on the right
+                                                                              </span></td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>-->
+                                                            <!-- END RIGHT COLUMN-->
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- END TWO COLUMNS (COPY: LEFT, IMAGE: RIGHT)-->
+
+
+                                        <!-- START BULLETPROOF BUTTON ROW-->
+                                        <tr>
+                                          <td>
+                                            <!-- START BULLETPROOF BUTTON -->
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                                <tr>
+                                                    <td align="center" style="padding: 10px 0 0 0;" class="padding-copy">
+                                                        <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                            <tr>
+                                                                <td align="center"><a href="#?PR=email01" target="_blank" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; background-color: #007299; border-top: 15px solid #007299; border-bottom: 15px solid #007299; border-left: 25px solid #007299; border-right: 25px solid #007299; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">Register Today</a></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- END BULLETPROOF BUTTON -->
+                                          </td>
+                                        </tr>
+                                        <!-- END BULLETPROOF BUTTON ROW-->
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END CONTENT-->
+
+
+<!-- START FOOTER SPACER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td bgcolor="#f8f8f8">
+      <div align="center" style="padding: 0px 15px 0px 15px;">
+        <table bgcolor="#f8f8f8" border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+          <!-- LOGO/PREHEADER TEXT -->
+          <tr>
+            <td style="padding: 10px 10px 10px 10px;" class="logo">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td bgcolor="#f8f8f8" width="100%" align="left">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>
+<!-- END FOOTER SPACER-->
+
+<!-- START FOOTER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td bgcolor="#f8f8f8">
+      <div align="center" style="padding: 0px 15px 0px 15px;">
+        <table bgcolor="#f8f8f8" border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+          <tr>
+            <td style="padding: 15px 10px 0px 10px;" class="logo">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td bgcolor="#f8f8f8" width="100%" align="center" style="font-size: 12px; font-family: Helvetica, Arial, sans-serif; color: #888888;">
+
+                    <a href="http://www.denovo-us.com" target="_blank">
+                      <img alt="Denovo" src="http://images.response.denovo-us.com/EloquaImages/clients/Denovo/%7b41913e3b-83e7-4769-9c99-9a08748b86e8%7d_DNV_LOGO_vGrey_79x100.png" width="28" height="35" style="display: block;" border="0">
+                    </a><br><span class="appleFooter" style="color: #888888; text-decoration: none;">
+                      6328 Monarch Park Place, Suite 200<br>
+                      Niwot, Colorado 80503<br>
+                      <a href="http://app.response.denovo-us.com/e/es?s=<eloqua type='emailfield' syntax='siteid'/>&e=<eloqua type='emailfield' syntax='elqemailsaveguid'/>&elq=<eloqua type='emailfield' syntax='recipientid'/>&elqaid=~~eloqua..type--emailfield..syntax--elqassetId~~&elqat=~~eloqua..type--emailfield..syntax--elqassetType~~&elqTrackId=5598ac47409d47e0b1b13510126b05d4" target="_blank" style="text-decoration: underline; color: #888888; font-size: 12px;">View in browser</a>
+                    </span><br><br>
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>
+<!-- END FOOTER-->
+
+</body>
+</html>

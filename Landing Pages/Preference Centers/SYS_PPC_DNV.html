@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Denovo</title>
+
+    <!--Adobe Typekit-->
+    <script src="https://use.typekit.net/auz2wjg.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="http://images.response.denovo-us.com/Web/Denovo/{6d2e41e3-6e28-4cba-afe4-e5e58a9066f3}_bootstrap.4.0.0-alpha.2.min.js"></script>
+    <link rel="stylesheet" href="http://images.response.denovo-us.com/Web/Denovo/{edb55ae1-cf46-4ace-b32f-8d3a46ac8206}_bootstrap.4.0.0-alpha.2.min.css">
+
+
+    <style type="text/css">
+      @media (max-width: 33.9em) { #hero {background-image: url("https://placehold.it/640x400.jpg"); background-position: center center;}  }
+      @media (min-width: 34em) and (max-width: 47.9em) { #hero {background-image: url("https://placehold.it/640x400"); background-position: center center;}  }
+      @media (min-width: 48em) and (max-width: 61.9em) { #hero {background-image: url("https://placehold.it/1024x400"); background-position: center center;}  }
+      @media (min-width: 62em) { #hero {background-image: url("https://placehold.it/1920x800"); background-position: center center;}  }
+    </style>
+
+<style type="text/css">
+
+html,body {
+width: 100%;
+height: 100%;
+}
+
+body {
+font-family: "proxima-nova", Arial, sans-serif;
+font-size: 1rem;
+line-height: 1.5;
+font-weight: 300;
+color: #616669;
+background-color: #f8f8f8;
+}
+
+h1, h3, h4, h5, h6, b {color: #424649;}
+
+h2 {color: #007299;}
+
+
+/* Links
+*********************************/
+
+a {
+color: #19988b;
+text-decoration: none;
+}
+
+a:focus, a:hover {
+color: #008065;
+text-decoration: underline;
+}
+
+footer a:link, footer a:visited {
+color: inherit; }
+
+footer a:hover, footer a:focus {
+color: inherit; }
+
+#outsideUSACanada:hover, #insideUSACanada:hover {color: #4c4f52;}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+#outsideUSACanada:hover,
+#insideUSACanada:hover  {
+-webkit-transition: color 0.2s ease-out;
+-moz-transition: color 0.2s ease-out;
+-o-transition: color 0.2s ease-out;
+transition: color 0.2s ease-out;
+text-decoration: underline; }
+
+
+/* Button
+*********************************/
+
+.btn, .btn:focus {
+background-color: #007299;
+border-color: transparent;
+color: #fefefe;
+font-weight: 700;
+}
+
+.btn:hover {
+background-color: #185a7d;
+border-color: transparent;
+}
+
+#eq-form .btn {padding: 1em; margin-top: 2em; margin-bottom: 2em;}
+
+/* Hero
+*********************************/
+
+#hero {
+background-repeat: no-repeat;
+background-attachment: scroll;
+margin-bottom: 0px;
+-webkit-background-size: 100%;
+-moz-background-size: 100%;
+-o-background-size: 100%;
+/* background-size: 100%; */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 350px;
+}
+
+.hero-content {
+padding: 4rem 2rem;
+}
+
+
+/* Identity
+*********************************/
+#identity {
+background-color: #ffffff;
+border-bottom: 1px solid #dddddd;
+padding: 1em;
+margin-bottom: 2em;
+}
+
+
+/* Misc
+*********************************/
+.event-date-time {
+font-weight: 900;
+text-transform: uppercase;
+color: #424649;
+}
+
+#title {padding-top: 3em; padding-bottom: 3em;}
+
+#presenters h2,
+#sponsors h2,
+#eloqua-form h2 {
+border-bottom: 1px solid #cccccc;
+padding-top: 2em;
+padding-bottom: 0.5em;
+}
+
+@media (max-width: 47.9em) {
+  .pad-1em-bottom-mobile {
+    margin-bottom: 1em;
+  }
+}
+
+.pref-center {
+padding-bottom: 0.5em;
+}
+
+.pref-center p {font-size: 90%; padding-left: 20px;}
+
+.pref-center-option {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* Footer
+*********************************/
+
+footer {
+background-color: #f8f8f8;
+font-size: 12px;
+color: #727678;
+padding-bottom: 5em;
+}
+
+/* Utilities
+*********************************/
+.pad-3 {padding: 3em;}
+
+.no-padding {
+padding: 0;
+}
+
+.no-gutter > [class*=col-] {
+padding-right: 0;
+padding-left: 0;
+}
+
+.img-fluid-flexbox {
+width: 100%;
+height: auto;
+}
+
+.flex-center-vertical-only {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.btn {
+white-space: normal;
+}
+
+.center-block {float: none !important}
+
+.first-error, .second-error {text-align: center; padding-bottom: 1em;}
+
+/* Form
+*********************************/
+
+/* Width of all types */
+#eq-form select,
+#eq-form input[type="text"],
+#eq-form textarea {
+max-width: 100%;
+width: 100%;
+}
+
+/* Style of all types */
+#eq-form select,
+#eq-form input[type="text"],
+#eq-form textarea {
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+font-size: 14px;
+}
+
+/* Width of all types */
+#eq-form .form-group {
+margin-bottom: 1.3rem;
+}
+
+
+/* Label Style */
+#eq-form label {
+cursor: auto;
+font-family: 'proxima-nova', Arial, sans-serif;
+margin-bottom: 0.2rem;
+font-size: 14px;
+}
+
+/* Label Instructions */
+#eq-form .instructions {
+font-size: 75%;
+display: block;
+margin-bottom: 0.5rem;
+}
+
+/* Label Options */
+#eq-form .optional {
+font-size: 75%;
+display: inline;
+}
+
+/* Style Checkboxes */
+#eq-form .checkbox {
+padding-left: 15px;
+cursor: pointer;
+}
+
+/* Ziptastic */
+#eq-form #outsideUSACanada,
+#eq-form #insideUSACanada {
+text-decoration: underline;
+cursor: pointer;
+}
+
+
+#eq-form .btn {
+-webkit-transition: background-color 0.2s ease-out;
+-moz-transition: background-color 0.2s ease-out;
+-o-transition: background-color 0.2s ease-out;
+transition: background-color 0.2s ease-out;
+}
+
+/* Legal Statement
+================================== */
+#privacy-statement {
+font-size: 14px;
+font-family: 'proxima-nova', Arial, sans-serif;
+text-align: left;
+color: #616669;
+line-height: 1.5;
+border-top: 1px dotted #cccccc;
+border-bottom: 1px dotted #cccccc;
+padding: 1em;
+}
+
+#privacy-statement h5 {
+text-align: center;}
+
+#eq-form #privacy-statement .LV_invalid {
+color: #e74c39;
+display: inline !important;
+/* Reset styling for Legal Statement */
+font-size: 0.825em !important;
+margin-left: 0%;
+/* Reset styling for Legal Statement */
+padding-left: 0px;
+/* Reset styling for Legal Statement */ }
+
+#eq-form #privacy-statement-checkbox {
+clear: both;
+display: inline;
+margin-right: 5px; }
+
+#eq-form #fieldPrivacyStatementCheckbox {
+margin: 0px 5px 0px 0px; }
+
+#eq-form label.privacy {
+display: inline; }
+
+
+
+
+/* Form Validation
+================================== */
+#eq-form .LV_invalid {
+color: #e74c39;
+display: block;
+/* Push validation message under form input */
+font-size: 0.625em;
+font-weight: bold;
+margin-left: 0%;
+/* Match indent for form inputs */
+padding-left: 0px;
+/* Match indent for form inputs */ }
+
+#eq-form .LV_valid {
+color: #72a951;
+display: none; }
+
+#eq-form .LV_validation_message {
+font-family: Arial, sans-serif; }
+
+#eq-form .LV_valid_field, #eq-form .LV_invalid_field {
+border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
+border-right: 1px solid rgba(0, 0, 0, 0.2) !important;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important; }
+
+#eq-form .LV_valid_field,
+input.LV_valid_field:hover,
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover,
+textarea.LV_valid_field:active {
+border-left: 3px solid #72a951 !important; }
+
+#eq-form .LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+border-left: 3px solid #e74c39 !important; }
+
+</style>
+
+
+<!--START ELOQUA TRACKING CODE-->
+<script type="text/javascript">
+
+var EloquaSiteID = "685749526"; // The Site ID of your Eloqua Instance
+var EloquaScript = "http://img03.en25.com/i/elqCfg.min.js"; // Path to elqCfg.min.js
+
+var _elqQ = _elqQ || [];
+_elqQ.push(['elqSetSiteId', EloquaSiteID]);
+_elqQ.push(['elqTrackPageView']);
+
+(function () {
+  function async_load() {
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+    s.src = EloquaScript;
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  }
+  if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+  else if (window.attachEvent) window.attachEvent('onload', async_load);
+})();
+
+</script>
+<!--END ELOQUA TRACKING CODE-->
+
+<!--START EMAIL GROUP LOOKUPS-->
+<script type="text/javascript">
+
+    var SubLookupRunning = true;
+
+  //Create variables to store Subscription List Data Lookup ID (Email Group ID)
+  var emailGroup_DNV_Promotional = '{13f63735-a5ab-48c2-944e-9f1d88259091}';
+  var emailGroup_DNV_Events = '{bfc02774-258f-4782-828e-d77c08f8b8b6}';
+
+  //Create variables for function: SetElqContent
+  var status_DNV_Promotional;
+  var status_DNV_Events;
+
+  //Eloqua's function to call Email Group Status
+  //SetElqContent and GetElqGroupMembershipStatus are defined by Eloqua
+    function SetElqContent() {
+    status_DNV_Promotional = GetElqGroupMembershipStatus(emailGroup_DNV_Promotional);
+    status_DNV_Events = GetElqGroupMembershipStatus(emailGroup_DNV_Events);
+
+    SetupForm();
+
+    }
+
+  //Find visitor's email address from the field merge in the Email Address form field
+  //Use email address to find user's Email Group status using Web Data Lookup
+    function GetEmailAddress() {
+
+        _elqQ.push(['elqDataLookup', escape('cc9ca631ba8242c0990041ad8654213c'), '<C_EmailAddress>' + document.getElementById('fieldID_emailAddress').value + '</C_EmailAddress>']);
+
+    }
+
+
+    function SetupForm() {
+  //If visitor is subscribed to group, pre-check the box
+
+        if (status_DNV_Promotional) {
+            document.getElementById('fieldID_DNV_Promotional').checked = true;
+        }
+
+        if (status_DNV_Events) {
+            document.getElementById('fieldID_DNV_Events').checked = true;
+        }
+
+    }
+
+  //When page loads, get the visitor's email address
+    window.onload = GetEmailAddress;
+
+</script>
+<!--END EMAIL GROUP LOOKUP-->
+
+  </head>
+
+<body class="index">
+
+<!--Identity-->
+<header id="identity">
+  <div class="container">
+    <div class="row no-gutter">
+      <div class="col-xs-12 col-md-6 text-xs-center text-md-left">
+        <a href="http://wwww.denovo-us.com?elqTrack=true"><img src="http://images.response.denovo-us.com/EloquaImages/clients/Denovo/%7be37033fa-6e25-47ae-a3e3-235ebbaa5563%7d_DNV_LOGO_fullColor_800x168.png" style="height: 21px;" class="pad-1em-bottom-mobile"></a>
+      </div>
+      <div class="col-xs-12 col-md-6 text-xs-center text-md-right">
+        <a href="https://solutions.oracle.com/scwar/scr/AboutPartners/index.html?elqTrack=true"><img src="http://images.response.denovo-us.com/EloquaImages/clients/Denovo/%7B81594ecf-dc2c-43be-84bb-bd804a022690%7D_DNV_LOGO_oraclePlatinumPartnerBlack_612x89.png" style="height: 21px;"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--Hero-->
+<!--<div id="hero" class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      &nbsp;
+    </div>
+  </div>
+</div>-->
+
+
+<!--Title-->
+<section id="title">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-xs-center">
+        <h1>Promotional Preference Center</h1>
+        <p class="lead">Managing subscriptions for: <span style="color: #007299;"><span class="eloquaemail">EmailAddress</span></span><p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--START ELOQUA FORM FOR YIELD-->
+<section id="eloqua-form">
+<div class="container">
+
+<div class="row">
+  <div class="col-xs-12 col-lg-7 center-block text-xs-center">
+    <p style="border-bottom: 1px dotted #cccccc; padding-bottom: 0.5em;">You are currently subscribed to the following mailing groups</p>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-lg-7 center-block p-y-2">
+
+<!--Start Eloqua Form Code-->
+<form method="post" name="eq-form" action="https://s685749526.t.eloqua.com/e/f2" id="eq-form" target="_parent" class="">
+<input value="2015Q4_PPC_DNV" type="hidden" name="elqFormName">
+<input value="685749526" type="hidden" name="elqSiteId">
+<input name="elqCampaignId" type="hidden">
+
+<input id="fieldID_emailAddress" type="hidden" name="emailAddress" value="<eloqua type='emailfield' syntax='EmailAddress' />">
+
+<!--Promotional-->
+<div class="checkbox pref-center">
+  <label>
+    <input id="fieldID_DNV_Promotional" name="DNV_Promotional" type="checkbox" value="on" style="margin-top: 7px;">
+    <span class="pref-center-option">Promotional Offers</span>
+  </label>
+    <p>
+      Get the latest news on product updates, launches and other offers from Denovo.
+    </p>
+</div>
+
+<!--Events-->
+<div class="checkbox pref-center">
+  <label>
+    <input id="fieldID_DNV_Events" name="DNV_Events" type="checkbox" value="on" style="margin-top: 7px;">
+    <span class="pref-center-option">Events</span>
+  </label>
+    <p>
+      Receive information on Denovo host webinars, as well as local events and industry trade shows that Denovo will be attending.
+    </p>
+</div>
+
+<!--Submit Button-->
+  <button name="eq-form" type="submit" class="btn center-block">Update Promotional Preferences</button>
+
+<!--LEGAL STATEMENT-->
+  <div class="row">
+    <div class="col-xs-12">
+    <div id="privacy-statement">By submitting this form, I agree to receive promotional offers and other communications from Denovo. Consent can be withdrawn by unsubscribing at any time. Please refer to Denovo’s <a href="http://www.denovo-us.com/privacy-policy">Privacy Policy</a> for details.</div>
+    </div>
+  </div>
+
+</form>
+
+<!--END ELOQUA FORM CODE-->
+
+
+</div>
+</div>
+</div>
+</section>
+<!--END ELOQUA FORM FOR YEILD-->
+
+<!--Footer-->
+<footer>
+  <div class="container">
+    <div class="row no-gutter flex-center-vertical-only">
+      <div class="col-xs-12 text-xs-center">
+        <a href="http://www.denovo-us.com?elqTrack=true"><img src="http://images.response.denovo-us.com/EloquaImages/clients/Denovo/%7b41913e3b-83e7-4769-9c99-9a08748b86e8%7d_DNV_LOGO_vGrey_79x100.png" style="height: 35px; margin-bottom: 1em;"></a><br>
+            <span elqid="33" elqtype="Section" class="remove-absolute" style="display: block"><span class="copyrightNoticeText">© 2016 <a href="http://www.denovo-us.com?elqTrack=true&amp;elqTrackId=37c3c6f78cb34c1998216576198c8aba&amp;elqaid=<span class=eloquaemail>elqassetId</span>&amp;elqat=<span class=eloquaemail>elqassetType</span>">Denovo</a>. <br>All Rights Reserved.</span></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
